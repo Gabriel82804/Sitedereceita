@@ -1,0 +1,41 @@
+*   {
+            padding: 0;
+            margin: 0;
+            font: 13px arial,verdana, sans-serif black;
+        }
+<style type="text/css">
+        #cabeçalho{
+            background-color: #424242;
+            padding:20px; 
+            text-align: center;     
+        }
+        #cabeçalho h1{
+            font-size:50px;
+            font-family:verdana,arial, sans-serif;
+            color: #f0f0f0;
+            font-weight: normal
+        }
+        #cabeçalho 2{
+            background-color: #2E2E2E
+            padding:20px; 
+            text-align: center;
+
+        }
+        #cabeçalho 2 h2{
+            font-size:35px;
+            font-family:verdana,arial, sans-serif;
+            color: #f0f0f0;
+            font-weight: normal
+        }
+        #parte do meio{
+            background-color: #2E2E2E
+            padding:20px; 
+            text-align: center;
+        }
+        #parte do meio h2{
+            font-size:35px;
+            font-family:verdana,arial, sans-serif;
+            color: #f0f0f0;
+            font-weight: normal
+        }
+        </style>
