@@ -7,7 +7,7 @@
         <div id="cabeçalho">
             <div id="banner">
                 <!-- Inserir a figura do banner --> 
-            </div>
+            </div><!-- fim div banner-->
             <div id="menu">
                 <ul>
                     <li><a href="index.html">Home</a></li>
@@ -15,7 +15,7 @@
                     <li><a href="#">Categorias de Receitas</a></li>
                     <li><a href="#">Contato</a></li>
                 </ul>
-            </div> 
+            </div><!-- fim de div menu--> 
             <div id="pesquisa">
                 <p id="redes-sociais">
                     <img src="imagens/facebook.png" />
@@ -31,6 +31,7 @@
         </div>
         <div id="corpo">
             <h1>Nova Receita</h1>
+            <form action="salvar.js´p" method="POST">
             <p><label for="nome">Nome da Receita:
                 <input type="text" name="nome" id="nome" placeholder="Digite o nome da Receita" size="50"/>  
             </label></p> 
@@ -90,7 +91,7 @@
             </p> 
             <p>
                     <p>
-                        <label for="modo-preparo">Modo de preparo:
+                        <label for="modo-preparo">Descrição da receita
                             <textarea id="modo-preparo" name="modo-preparo" placeholder="Digite o modo de preparo" cols="50" rows="10"></textarea>
                         </label>
             </p> 
@@ -103,7 +104,60 @@
                 <input id="dificil" type="radio" name="dificuldade" value="d" />
                 <label for="dificil">Difícil</label>
             </p>
-        </div> 
+            <p>
+                Tempo de preparo: <input type="number" name="tempo-preparo" min="1"/>
+                <select name="unidade-tempo">
+                    <option value="min">minutos</option>
+                    <option value="h">horas</option>
+                    <option value="d">dia</option>
+                </select>
+            </p>
+            <p>
+                Rendimento: <input type="number" name="rendimento" min="1" max="100" />
+                porções
+            </p>
+            <p>
+                Acompanhamentos: <br/>
+                <table>
+                    <tr>
+                        <td>
+                            <label>
+                                    <input type="checkbox" name="Acompanhamentos" value="arroz" />
+                                    arroz
+                            </label>                           
+                        </td>
+                        <td>
+                            <label>
+                                    <input type="checkbox" name="Acompanhamentos" value="feijão" />
+                                    feijão
+                            </label>
+                        </td>
+                        <td>
+                            <label>
+                                    <input type="checkbox" name="Acompanhamentos" value="purê de batata" />
+                                    pure de batata
+                            </label>
+                        </td>
+                        <td>
+                             <label>
+                                    <input type="checkbox" name="Acompanhamentos" value="batata frita" />
+                                    batata frita
+                             </label>
+                        </td>
+                        <td>
+                             <label>
+                                    <input type="checkbox" name="Acompanhamentos" value="milho" />
+                                    milho
+                             </label>   
+                        </td>
+                    </tr>
+                </table>
+            </p>
+            <p>
+                <input type = "submit" value="Salvar Receita">
+            </p>
+        </form>
+        </div> <!--fim div corpo-->
         <div id="rodapé">
             <p>Desenvolvido por TDS1 - Fiap &copy; 2019</p>
             <p id="redes-sociais">
